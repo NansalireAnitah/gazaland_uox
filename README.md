@@ -1,1 +1,2 @@
 # gazalanduox
+We are a sports focused charity organization that leverages the power of sports to drive positive change. Originating form X(formely Twitter), the organization welcomes individuals from diverse social media platforms to join our mission
