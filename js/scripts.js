@@ -13,16 +13,19 @@ document.addEventListener('DOMContentLoaded', function() {
   document.querySelectorAll('.nav-links1 a').forEach(link => {
     link.addEventListener('click', () => {
       navLinks.classList.remove('active');
-      hamburger.remove;
+      hamburger.textContent = '☰'; 
     })
   })
 });
 
 // Show the volunteer modal when "Join Us" button is clicked
-document.querySelector('.involvement-card .cta-btn[href="#"]').addEventListener('click', function (event) {
-  event.preventDefault();
-  document.getElementById('volunteerModal').style.display = 'block';
-});
+const joinUsBtn = document.querySelector('.involvement-card .cta-btn[href="#"]');
+if (joinUsBtn) {
+  joinUsBtn.addEventListener('click', function (event) {
+    event.preventDefault();
+    document.getElementById('volunteerModal').style.display = 'block';
+  });
+}
 
 // Close the modal
 function closeModal() {
