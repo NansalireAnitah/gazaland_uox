@@ -908,11 +908,32 @@ footer {
 }
 
 .copyright {
-text-align: center;
-padding-top: 20px;
-border-top: 1px solid #333;
-color: #aaa;
-font-size: 0.9rem;
+    text-align: center;
+    padding-top: 20px;
+    border-top: 1px solid #333;
+    color: #aaa;
+    font-size: 0.9rem;
+}
+
+.footer-column a {
+    text-decoration: none;
+    outline: none;
+    box-shadow: none;
+}
+
+.footer-column a:focus,
+.footer-column a:active {
+    outline: none;
+    box-shadow: none;
+}
+
+.footer-column i {
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.footer-column i:hover {
+    transform: scale(1.1);
+    background-color: #e53935 !important;
 }
 
 /* Responsive Design */
