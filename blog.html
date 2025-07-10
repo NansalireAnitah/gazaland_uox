@@ -1,165 +1,175 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Mnyamwezi">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta http-equiv="refresh" content="600"/>
-    <title>Blog | GazalandUOX</title>
-    <!--Favicon-->
-    <link rel="icon" href="assets/favicon/gazaBlack.png">
-    <!--Bootstrap CSS-->
-    <link rel="stylesheet" href="/css/css/bootstrap.min.css">
-    <!--Custom CSS-->
-    <link rel="stylesheet" href="/css/styles.css">
-    <!--FontAwesome-->
-    <link rel="stylesheet" href="assets/fontawesome/css/all.min.css">
-   
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="author" content="Mnyamwezi">
+  <title>Blog | GazalandUOX</title>
+  <!--Favicon-->
+  <link rel="icon" href="assets/favicon/gazaBlack.png">
+  <!--Facebook/LinkedIn/whatsapp-->
+  <meta property="og:title" content="GazalandUOX">
+  <meta property="og:description" content="A sports focused charity organization spreading love through sports.">
+  <meta property="og:image" content="https://gazalanduox.vercel.app/assets/dp/gazalandtheme.png">
+  <!--Twitter-->
+  <meta name="twitter:card" content="image">
+  <meta name="twitter:title" content="GazalandUOX">
+  <meta name="twitter:description" content="A sports focused charity organization spreading love through sports.">
+  <meta name="twitter:image" content="https://gazalanduox.vercel.app/assets/dp/gazalandtheme.png">
+  <!--Bootstrap CSS-->
+  <link rel="stylesheet" href="/css/css/bootstrap.min.css">
+  <!--Custom CSS-->
+  <link rel="stylesheet" href="css/styles.css">
+  <!--FontAwesome-->
+  <link rel="stylesheet" href="assets/fontawesome/css/all.min.css">
 </head>
 <body>
-    <!--Header Section-->
-    <header>
-        <div class="container">
-            <nav class="navbar">
-              <div class="logo"> 
-                <a href="index.html"><img src="assets/logo/gaza.png" class="logo-icon" alt="GazalandUOX Logo"></a>
-                <span>Gazaland<span>UOX</span>
-              </div>
-              <ul class="nav-links1">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="index.html#aboutUs">About Us</a></li>
-                <li><a href="index.html#programs">Programs</a></li>
-                <li><a href="index.html#get-involved">Get Involved</a></li>
-                <li><a href="index.html#contact">Contact</a></li>
-                <li><a href="donate.html">Donate</a></li>
-              </ul>
-              <div class="hamburger">☰</div>
-            </nav>
-        </div>
-    </header>
-    <!--End-->
-
-    <!--Hero Section-->
-    <section class="heroBlog" id="home">
-        <div class="containerBlog">
-            <div class="hero-contentBlog">
-                <h1 style="font-weight: bold;">Blog</h1>
-                <p>
-                   Step into the lives we touch, the hope we nurture and the impact we ignite. From remote communities to those 
-                   doing better, our blog shares real voices, powerful journeys and the silent victories that make every effot 
-                   worthwhile. Be inspired, get involve and become part of the ripple of change.
-                    <br><br>
-                    <strong>"Stories That Stir Hearts, Spark Change"</strong>
-                </p>
-            </div>
-        </div>
-    </section>
-    <!--End-->
-
-    <!-- Main Content -->
-    <div class="container my-5">
-        <div class="row">
-            <div class="col-md-4">
-                <div class="card mb-4">
-                    <img src="assets/blog/sport.jpg" class="card-img-top" alt="Blog 1">
-                    <div class="card-body">
-                        <h5 class="card-title"><strong>How Sports Drive Positive Change</strong></h5>
-                        <p class="card-text">Discover how sports can transform lives and communities.</p>
-                        <!-- Button to trigger the modal -->
-                        <a href="#" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#blogModal1">Read More</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card mb-4">
-                    <img src="assets/blog/health.jpg" class="card-img-top" alt="Blog 2">
-                    <div class="card-body">
-                        <h5 class="card-title"><strong>Our Recent Health Initiatives</strong></h5>
-                        <p class="card-text">Learn about the health programs we’ve launched recently.</p>
-                        <!-- Button to trigger the modal -->
-                        <a href="#" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#blogModal2">Read More</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card mb-4">
-                    <img src="assets/blog/environment.jpg" class="card-img-top" alt="Blog 3">
-                    <div class="card-body">
-                        <h5 class="card-title"><strong>Upcoming Environmental Projects</strong></h5>
-                        <p class="card-text">Join us in our journey towards a sustainable future.</p>
-                        <!-- Button to trigger the modal -->
-                        <a href="#" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#blogModal3">Read More</a>
-                    </div>
-                </div>
-            </div>
-        </div>
+  <!-- Header -->
+  <header>
+    <div class="container">
+        <nav class="navbar navbar-expand-lg">
+          <div class="logo"> 
+            <a href="index.html"><img src="assets/logo/gaza.png" class="logo-icon" alt="GazalandUOX Logo"></a>
+            <span>Gazaland<span>UOX</span></span>
+          </div>
+          <!-- IMPORTANT: Navbar links are updated to work from the blog page -->
+          <ul class="nav-links1">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html#aboutUs">About Us</a></li>
+            <li><a href="blog.html" class="active">Blog</a></li> <!-- "active" class can be styled in CSS to show current page -->
+            <li><a href="index.html#programs">Programs</a></li>
+            <li><a href="index.html#get-involved">Get Involved</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
+          </ul>
+          <div class="hamburger">☰</div>
+        </nav>
     </div>
+  </header>
+  <!--End-->
 
-    <!--Modal 1-->
-    <div class="modal fade" id="blogModal1" tabindex="-1" aria-labelledby="blogModalLabel1" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="blogModalLabel1">How Sports Drive Positive Change</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <p>Sports have the power to unite people, bridge social divides and provide opportunities for personal growth. Learn about our initiatives and how they are transforming lives in our community.</p>
-                    
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                </div>
-            </div>
+  <!-- Blog Section -->
+  <main class="blog-page" style="padding-top: 120px; padding-bottom: 60px;">
+    <div class="container">
+      <div class="section-title">
+        <h2>Our Blog</h2>
+        <p>News, stories, and updates from the GazalandUOX community.</p>
+      </div>
+
+      <div class="blog-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px;">
+        
+        <!-- Blog Post 1 -->
+        <div class="blog-post-card" style="border: 1px solid #ddd; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+          <img src="assets/programs/CommunityLeagues.jpg" alt="A community football game" style="width: 100%; height: 200px; object-fit: cover;">
+          <div class="blog-post-content" style="padding: 20px;">
+            <h3 style="margin-top: 0;">Kicking Off the Annual Community League</h3>
+            <p class="post-meta" style="font-size: 0.9em; color: #777;">Published on: October 26, 2024</p>
+            <p>Our much-anticipated community league is back! Discover how this year's tournament is bringing together more teams and creating a positive impact on local youth...</p>
+            <a href="#" class="cta-btn" style="text-decoration: none; display: inline-block; margin-top: 10px;">Read More</a>
+          </div>
         </div>
-    </div>
 
-    <!-- Modal 2 -->
-    <div class="modal fade" id="blogModal2" tabindex="-1" aria-labelledby="blogModalLabel2" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="blogModalLabel2">Our Recent Health Initiatives</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <p>We’ve launched a number of health-focused initiatives recently to improve well-being in our community. Read more about these programs and how you can get involved.</p>
-                    
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                </div>
-            </div>
+        <!-- Blog Post 2 -->
+        <div class="blog-post-card" style="border: 1px solid #ddd; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+          <img src="assets/programs/communityCleaning.jpg" alt="Volunteers cleaning a park" style="width: 100%; height: 200px; object-fit: cover;">
+          <div class="blog-post-content" style="padding: 20px;">
+            <h3 style="margin-top: 0;">A Cleaner Community, A Brighter Future</h3>
+            <p class="post-meta" style="font-size: 0.9em; color: #777;">Published on: October 15, 2024</p>
+            <p>Last weekend, our amazing volunteers took to the streets for our quarterly community cleanup. See the incredible transformation and learn how you can join the next one...</p>
+            <a href="#" class="cta-btn" style="text-decoration: none; display: inline-block; margin-top: 10px;">Read More</a>
+          </div>
         </div>
-    </div>
 
-    <!-- Modal 3 -->
-    <div class="modal fade" id="blogModal3" tabindex="-1" aria-labelledby="blogModalLabel3" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="blogModalLabel3">Upcoming Environmental Projects</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <p>Our upcoming environmental projects aim to promote sustainability. Join us in making a positive impact through community-driven initiatives.</p>
-                    
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                </div>
-            </div>
+        <!-- Blog Post 3 -->
+        <div class="blog-post-card" style="border: 1px solid #ddd; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+          <img src="assets/programs/CharityOutreach1.png" alt="Donations being handed out" style="width: 100%; height: 200px; object-fit: cover;">
+          <div class="blog-post-content" style="padding: 20px;">
+            <h3 style="margin-top: 0;">Spreading Hope: Our Latest Outreach Success</h3>
+            <p class="post-meta" style="font-size: 0.9em; color: #777;">Published on: September 30, 2024</p>
+            <p>Thanks to your generous donations, we were able to provide essential supplies to over 50 families in need. Read the full story of our latest community outreach drive...</p>
+            <a href="#" class="cta-btn" style="text-decoration: none; display: inline-block; margin-top: 10px;">Read More</a>
+          </div>
         </div>
-    </div>
 
-    <!-- Footer -->
-    <footer class="bg-dark text-white text-center py-4">
-        <p>&copy; 2025 Gazaland UOX. All Rights Reserved.</p>
-    </footer>
-    <!--Bootstrap JS-->
-    <script src="js/js/bootstrap.bundle.min.js"></script>
-    <!--Custom JS-->
-    <script src="js/scripts.js"></script>
+      </div> <!-- end .blog-grid -->
+    </div>
+  </main>
+  <!-- End Blog Section -->
+
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-container">
+        <div class="footer-column">
+          <h3>GazalandUOX</h3>
+          <p>
+            We envision a future where sports are a catalyst for positive change, bridging gaps between communities and empowering individuals to reach 
+            their full potential.
+          </p>
+          <div>
+            <a href="https://www.facebook.com/gazalanduox" target="_blank" rel="noreferrer noopener" class="socialbtn btn-outline-light btn-floating m-1 text-white" role="button">
+              <i class="fab fa-facebook" style="color: white; background-color: var(--maroon); border-radius: 50%; padding: 5px; transition: all 0.3s;" onmouseover="this.style.backgroundColor='#e53935'" onmouseout="this.style.backgroundColor='var(--maroon)'"></i>
+            </a>
+
+            <a href="https://www.instagram.com/gazalanduox" target="_blank" rel="noreferrer noopener" class="socialbtn btn-outline-light btn-floating m-1 text-white" role="button">
+              <i class="fab fa-instagram" style="color: white; background-color: var(--maroon); border-radius: 50%; padding: 5px; transition: all 0.3s;" onmouseover="this.style.backgroundColor='#e53935'" onmouseout="this.style.backgroundColor='var(--maroon)'"></i>
+            </a>
+
+            <a href="https://www.twitter.com/gazalanduox" target="_blank" rel="noreferrer noopener" class="socialbtn btn-outline-light btn-floating m-1 text" role="button">
+              <i class="fab fa-twitter" style="color: white; background-color: var(--maroon); border-radius: 50%; padding: 5px; transition: all 0.3s;" onmouseover="this.style.backgroundColor='#e53935'" onmouseout="this.style.backgroundColor='var(--maroon)'"></i>
+            </a>
+
+            <a href="https://www.tiktok.com/gazalanduox" target="_blank" rel="noreferrer noopener" class="socialbtn btn-outline-light btn-floating m-1 text-white" role="button">
+              <i class="fab fa-tiktok" style="color: white; background-color: var(--maroon); border-radius: 50%; padding: 5px; transition: all 0.3s;" onmouseover="this.style.backgroundColor='#e53935'" onmouseout="this.style.backgroundColor='var(--maroon)'"></i>
+            </a>
+            
+            <a href="https://www.linkedin.com/gazalanduox" target="_blank" rel="noreferrer noopener" class="socialbtn btn-outline-light btn-floating m-1 text-white" role="button">
+              <i class="fab fa-linkedin" style="color: white; background-color: var(--maroon); border-radius: 50%; padding: 5px; transition: all 0.3s;" onmouseover="this.style.backgroundColor='#e53935'" onmouseout="this.style.backgroundColor='var(--maroon)'"></i>
+            </a>
+          </div>
+        </div>
+        <div class="footer-column">
+          <h3>Quick Links</h3>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html#aboutUs">About Us</a></li>
+            <li><a href="index.html#programs">Programs</a></li>
+            <li><a href="index.html#get-involved">Get Involved</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h3>Recent Tweets</h3>
+          <ul class="footer-links">
+            <li>
+              <i class="fas fa-check-circle text-white me-2"></i> <a href="https://x.com/gazalanduox" target="_blank" rel="noopener noreferrer">Community Outreach</a>
+            </li>
+            <li>
+              <i class="fas fa-check-circle text-white me-2"></i> <a href="https://x.com/gazalanduox" target="_blank" rel="noopener noreferrer">Sports Gala</a>
+            </li>
+            <li>
+              <i class="fas fa-check-circle text-white me-2"></i> <a href="https://x.com/gazalanduox" target="_blank" rel="noopener noreffer">Sunday Activities</a>
+            </li>
+            <li>
+              <i class="fas fa-check-circle text-white me-2"></i> <a href="https://x.com/gazalanduox" target="_blank" rel="noopener noreffer">Community Cleanup</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h3>Newsletter</h3>
+          <p>Subscribe to our newsletter to stay updated on our impact and upcoming events.</p>
+          <form>
+            <input type="email" placeholder="Your email address" style="padding: 10px; width: 100%; margin-top: 10px; border-radius: 4px; border: none;">
+            <button type="submit" style="background-color: var(--maroon); color: white; border: none; padding: 10px; width: 100%; margin-top: 10px; border-radius: 4px; cursor: pointer; font-weight: bold;">Subscribe</button>
+          </form>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>© 2025 GazalandUOX | All Rights Reserved.</p>
+      </div>
+    </div>
+  </footer>
+  <!--custom js-->
+  <script src="js/scripts.js"></script>
 </body>
 </html>
